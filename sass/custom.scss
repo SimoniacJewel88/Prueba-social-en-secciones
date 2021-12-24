@@ -9,7 +9,7 @@ $dark-grayish-magenta: hsl(303, 10%, 53%);
 $light-grayish-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
-$font-base: 'Spartan', sans-serif;
+$font-base: 'Spartan', sans-serif;  //weight 400 - 500 - 700
 
 * {
     margin: 0;
@@ -19,16 +19,145 @@ $font-base: 'Spartan', sans-serif;
 }
 
 body {
-    background-color: aqua ;
+    background-image: url('../images/bg-pattern-top-mobile.svg') ,url('../images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 0%, 100%;
     font-family: $font-base;
+    font-size: 15px;
 }
 
+.principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.empresa {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding: 4px;
+    text-align: center;
+
+    .cabecera {
+        margin-bottom: 20px;
+        
+        .titulo {
+            color: $very-dark-magenta;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p {
+            color: $dark-grayish-magenta;
+        }
+    }
+
+    .resenias {
+        margin-bottom: 2rem;
+
+        .flex-rate {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 65px;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-top: 15px;
+            background-color: $light-grayish-magenta;
+
+            .puntuacion {
+                
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                }
+            }
+
+            p {
+                color: $very-dark-magenta;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.testimonios {
+    max-width: 350px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .testimonio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $very-dark-magenta;
+        border-radius: 0.9rem;
+        overflow: hidden;
+        padding: 30px;
+        height: 240px;
+        margin-bottom: 20px;
+
+        .comprador-avatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 30px;
+
+            img {
+                height: 48px;
+                border-radius: 50%;
+                margin-right: 30px
+            }
+            h4 {
+                color: $white;
+                font-size: 0.8rem;
+                font-weight: 500;
+                line-height: 1.1rem;
+
+                span {
+                    color: $soft-pink;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        p {
+            color: $white;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.star {
+    list-style-image: url(../images/icon-star.svg);
+    // background-image: url(../images/icon-star.svg);
+    // background-repeat: no-repeat;
+    margin-left: 1.5rem;
+    
+}
 
 // Estilos de frontend Mentor
 .attribution {
     font-size: 12px;
+    font-weight: 500;
     text-align: center;
+    margin-bottom: 20px;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $very-dark-magenta;
+    // color: $soft-pink;
+    font-weight: 700;
+    text-decoration: none;
 }
