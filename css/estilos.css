@@ -353,7 +353,7 @@ body {
     line-height: 1.3rem;
   }
 }
-@media (min-height: 652px) {
+@media screen and (min-height: 652px) and (min-width: 1200px) {
   body {
     display: flex;
     height: 100vh;
