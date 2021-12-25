@@ -149,7 +149,7 @@ body {
 @media (min-width: 768px) {
     body {
         background-image: url('../images/bg-pattern-top-desktop.svg') ,url('../images/bg-pattern-bottom-desktop.svg');
-        background-position-x: 0%;
+        background-position-x: 0% , 100%;
     }
     .principal {
         // width: 700px;
@@ -265,11 +265,7 @@ body {
 }
 
 @media (min-width: 992px) {
-    body {
-        background-image: url('../images/bg-pattern-top-desktop.svg') ,url('../images/bg-pattern-bottom-desktop.svg');
-        background-position-x: 0%;
-    }
-
+    
     .empresa {
         max-width: none;
         width: 900px;
@@ -354,27 +350,92 @@ body {
 }
 
 @media (min-width: 1200px) {
-    body {
-        background-color: steelblue;
-    }
-
     
+    .empresa {
+        width: 1130px;
+        margin-top: 2rem;
+        letter-spacing: -0.5px;
+        justify-content: space-between;
+
+        .cabecera {
+            width: 40%;
+            
+            .titulo {
+                font-size: 3em;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 1.3rem;
+                font-weight: 500;
+            }
+        }
+    
+        .resenias {
+            width: 46%;
+    
+            .flex-rate {
+                height: 55px;
+                width: 430px;
+                margin-top: 16px;
+    
+                p {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .testimonios {
+        width: 1130px;
+        margin-top: 2rem;
+        height: 280px;
+        
+        .flex-arriba {
+            align-self: flex-start;
+        }
+        .flex-abajo {
+            align-self: flex-end;
+        }
+
+        .flex-centro-y {
+            align-self: center;
+        }
+
+        .testimonio {
+            border-radius: 0.5rem;
+            height: 230px;
+            width: 350px;
+
+            .comprador-avatar {
+
+                h4 {
+                    font-size: 0.8rem;
+                    line-height: 1.4rem;
+                    font-weight: 700;
+    
+                    span {
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            p {
+                font-size: 13px;
+                line-height: 1.3rem;
+            }
+        }
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-height: 652px) {
+    body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 
 .star {

@@ -119,7 +119,7 @@ body {
 @media (min-width: 768px) {
   body {
     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
-    background-position-x: 0%;
+    background-position-x: 0%, 100%;
   }
 
   .principal {
@@ -216,11 +216,6 @@ body {
   }
 }
 @media (min-width: 992px) {
-  body {
-    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
-    background-position-x: 0%;
-  }
-
   .empresa {
     max-width: none;
     width: 900px;
@@ -294,8 +289,76 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .empresa {
+    width: 1130px;
+    margin-top: 2rem;
+    letter-spacing: -0.5px;
+    justify-content: space-between;
+  }
+  .empresa .cabecera {
+    width: 40%;
+  }
+  .empresa .cabecera .titulo {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  .empresa .cabecera p {
+    font-size: 15px;
+    line-height: 1.3rem;
+    font-weight: 500;
+  }
+  .empresa .resenias {
+    width: 46%;
+  }
+  .empresa .resenias .flex-rate {
+    height: 55px;
+    width: 430px;
+    margin-top: 16px;
+  }
+  .empresa .resenias .flex-rate p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .testimonios {
+    width: 1130px;
+    margin-top: 2rem;
+    height: 280px;
+  }
+  .testimonios .flex-arriba {
+    align-self: flex-start;
+  }
+  .testimonios .flex-abajo {
+    align-self: flex-end;
+  }
+  .testimonios .flex-centro-y {
+    align-self: center;
+  }
+  .testimonios .testimonio {
+    border-radius: 0.5rem;
+    height: 230px;
+    width: 350px;
+  }
+  .testimonios .testimonio .comprador-avatar h4 {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+  }
+  .testimonios .testimonio .comprador-avatar h4 span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .testimonios .testimonio p {
+    font-size: 13px;
+    line-height: 1.3rem;
+  }
+}
+@media (min-height: 652px) {
   body {
-    background-color: steelblue;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .star {
